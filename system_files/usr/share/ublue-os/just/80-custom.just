@@ -145,3 +145,13 @@ install-virtualization:
 # Un-install virtualization stack (libvirt/virt-manager/etc)
 uninstall-virtualization:
   rpm-ostree uninstall libvirt-client libvirt-daemon-kvm virt-install virt-manager
+
+# Install system flatpaks
+_install-standard-flatpaks:
+    #!/bin/bash
+    BLUEFIN-DX_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/ublue-os/bluefin/main/bluefin_flatpaks/flatpaks | tr '\n' ' ')"
+    STANDARD_FLATPAK_LIST="$(curl https://raw.githubusercontent.com/kanutten/bluetrain/main/flatpaks/standard_flatpaks | tr '\n' ' ')"
+    echo "Installing Bluefin-dx Flatpaks.."
+    flatpak --system -y install ${BLUEFIN-DX_FLATPAK_LIST}
+    echo "Installing Standard Flatpaks.."
+    flatpak --system -y install ${STANDARD_FLATPAK_LIST}
