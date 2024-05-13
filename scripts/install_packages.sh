@@ -2,14 +2,19 @@
 
 set -ouex pipefail
 
-utility_packages=(
+utility=(
   "flameshot"
   "nextcloud-client"
   "nextcloud-client-nautilus"
 )
 
+extensions=(
+  "gnome-shell-extension-just-perfection.noarch"
+)
+
 packages=(
-  ${utility_packages[@]}
+  ${utility[@]}
+  ${extensions[@]}
 )
 
 rpm-ostree install ${packages[@]} 
