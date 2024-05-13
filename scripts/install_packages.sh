@@ -4,6 +4,8 @@ set -ouex pipefail
 
 utility_packages=(
   "flameshot"
+  "nextcloud-client"
+  "nextcloud-client-nautilus"
 )
 
 packages=(
