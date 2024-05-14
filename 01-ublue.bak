@@ -73,7 +73,7 @@ command="flatpak run io.missioncenter.MissionCenter"
 name='mission-center'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3]
-binding='<Control><Alt>Return'
+binding='<Control><Alt>Return'/usr/libexec/distrobox-quadlet-ptyxis.sh fedora-toolbox
 command='/usr/libexec/distrobox-quadlet-ptyxis.sh bluefin-cli'
 name='Bluefin Ptyxis'
 
@@ -82,10 +82,10 @@ binding='<Control><Alt>f'
 command='/usr/libexec/distrobox-quadlet-ptyxis.sh fedora-toolbox'
 name='Fedora Ptyxis'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
+[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4]
 binding='<Shift><Super>s'
-command='script --command "flameshot gui" /dev/null'
-name='flameshot'
+command='/usr/libexec/distrobox-quadlet-ptyxis.sh fedora-toolbox'
+name='script --command "flameshot gui" /dev/null'
 
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
