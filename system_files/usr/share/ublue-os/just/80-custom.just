@@ -155,3 +155,7 @@ install-rebase-flatpaks:
     flatpak --system -y install ${BLUEFIN_DX_FLATPAK_LIST}
     echo "Installing Standard Flatpaks.."
     flatpak --system -y install ${STANDARD_FLATPAK_LIST}
+
+# Create a bluefin-cli (jorge custom) container
+distrobox-fedora-custom:
+  distrobox create --nvidia --image ghcr.io/castrojo/bluefin-cli:latest -n bluefin-cli-ctm -Y
