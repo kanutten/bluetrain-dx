@@ -82,11 +82,6 @@ binding='<Control><Alt>f'
 command='/usr/libexec/distrobox-quadlet-ptyxis.sh fedora-toolbox'
 name='Fedora Ptyxis'
 
-[org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5]
-binding='<Shift><Super>s'
-command='script --command "flameshot gui" /dev/null'
-name='flameshot" /dev/null'
-
 [org/gnome/settings-daemon/plugins/media-keys]
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
 home=['<Super>e']
