@@ -13,7 +13,7 @@ RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     /scripts/just.sh && \
 #    /scripts/dconf.sh && \
-    /scripts/msfont.sh && \
+#    /scripts/msfont.sh && \
     /scripts/install_packages.sh && \
     /scripts/cleanup.sh && \
     ostree container commit
