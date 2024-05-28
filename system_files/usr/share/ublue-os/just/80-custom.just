@@ -159,3 +159,13 @@ install-rebase-flatpaks:
 # Create a bluefin-cli (jorge custom) container
 distrobox-bluefin-cli-jorge-custom:
   distrobox create --nvidia --image ghcr.io/castrojo/bluefin-cli:latest -n bluefin-cli-ctm -Y
+
+# Install ms-fonts
+Installing-Microsoft-Fonts-to~/.local/share/fonts/mscorefonts:
+    #!/bin/bash
+    mkdir -p ~/.local/share/fonts/mscorefonts
+    wget https://cloud.uol.de/s/6HtRPcJZeMip7aC/download/ms-corefonts.zip -P ~/
+    cd ~/
+    unzip ms-corefonts.zip
+    rm ms-corefonts.zip
+    cp -v fonts/*.ttf fonts/*.TTF ~/.local/share/fonts/mscorefonts/
