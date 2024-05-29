@@ -161,12 +161,9 @@ distrobox-bluefin-cli-jorge-custom:
   distrobox create --nvidia --image ghcr.io/castrojo/bluefin-cli:latest -n bluefin-cli-ctm -Y
 
 # Install ms-fonts
-Installing-Microsoft-Fonts:
+Install-Microsoft-Fonts:
     #!/bin/bash
     mkdir -p ~/.local/share/fonts/mscorefonts
-    wget https://cloud.uol.de/s/6HtRPcJZeMip7aC/download/ms-corefonts.zip -P ~/
-    cd ~/
-    unzip ms-corefonts.zip
-    rm ms-corefonts.zip
+    cd ~/Nextcloud/Documents/Privat/Homelab/ms-fonts/
     cp -v fonts/*.ttf fonts/*.TTF ~/.local/share/fonts/mscorefonts/
-    rm -rf fonts
+

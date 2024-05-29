@@ -1,0 +1,15 @@
+
+
+
+
+# Install ms-fonts
+Installing-Microsoft-Fonts:
+    #!/bin/bash
+    mkdir -p ~/.local/share/fonts/mscorefonts
+    cd ~/
+    unzip ms-corefonts.zip
+    rm ms-corefonts.zip
+    cp -v fonts/*.ttf fonts/*.TTF ~/.local/share/fonts/mscorefonts/
+    rm -rf fonts
+
+~/Nextcloud/Documents/Privat/Homelab/ms-fonts/fonts
