@@ -6,6 +6,7 @@ utility=(
   "flameshot"
   "nextcloud-client"
   "nextcloud-client-nautilus"
+  "sg3_utils"
 )
 
 extensions=(
