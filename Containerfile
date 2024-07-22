@@ -1,6 +1,6 @@
 ARG SOURCE_IMAGE="bluefin-dx"
 #ARG SOURCE_SUFFIX="-main"
-ARG SOURCE_TAG="gts"
+ARG SOURCE_TAG="stable"
 FROM ghcr.io/ublue-os/${SOURCE_IMAGE}${SOURCE_SUFFIX}:${SOURCE_TAG}
 
 
