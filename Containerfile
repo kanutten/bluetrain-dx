@@ -12,6 +12,7 @@ COPY --chmod=755 scripts /scripts
 RUN mkdir -p /var/lib/alternatives && \
     /tmp/build.sh && \
     /scripts/just.sh && \
+    /scripts/karg.sh && \
 #    /scripts/dconf.sh && \
 #    /scripts/msfont.sh && \
     /scripts/install_packages.sh && \
