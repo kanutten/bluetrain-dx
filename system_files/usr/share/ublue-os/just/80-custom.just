@@ -157,7 +157,7 @@ install-rebase-flatpaks:
     flatpak --system -y install ${STANDARD_FLATPAK_LIST}
 
 # Create a bluefin-cli (jorge custom) container
-assemble distrobox-boxkit:
+assemble-distrobox-boxkit:
   distrobox create --image ghcr.io/kanutten/boxkit:latest -n boxkit -Y
 
 # Install ms-fonts
