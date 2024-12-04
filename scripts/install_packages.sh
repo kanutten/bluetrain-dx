@@ -7,6 +7,7 @@ utility=(
   "nextcloud-client"
   "nextcloud-client-nautilus"
   "sg3_utils"
+  "icaclient"
 )
 
 extensions=(
