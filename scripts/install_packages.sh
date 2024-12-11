@@ -7,7 +7,6 @@ utility=(
   "nextcloud-client"
   "nextcloud-client-nautilus"
   "sg3_utils"
-  "microsoft-edge-stable"
 )
 
 extensions=(
