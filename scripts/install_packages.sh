@@ -4,6 +4,7 @@ set -ouex pipefail
 
 utility=(
   "flameshot"
+  "touchegg"
   "nextcloud-client"
   "nextcloud-client-nautilus"
   "sg3_utils"
