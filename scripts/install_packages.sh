@@ -3,10 +3,11 @@
 set -ouex pipefail
 
 utility=(
-  "flameshot"
-  "nextcloud-client"
-  "nextcloud-client-nautilus"
-  "sg3_utils"
+  "facetimehd"
+#  "flameshot"
+#  "nextcloud-client"
+#  "nextcloud-client-nautilus"
+#  "sg3_utils"
 )
 
 extensions=(
