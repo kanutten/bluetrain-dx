@@ -15,7 +15,7 @@ RUN mkdir -p /var/lib/alternatives && \
 #    /scripts/karg.sh && \
 #    /scripts/dconf.sh && \
 #    /scripts/msfont.sh && \
-    /scripts/install_packages.sh && \
+#    /scripts/install_packages.sh && \
     /scripts/cleanup.sh && \
     ostree container commit
 
