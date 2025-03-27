@@ -14,9 +14,11 @@ RELEASE="$(rpm -E %fedora)"
 
 # this installs a package from fedora repos
 #rpm-ostree install screen
-dnf copr enable mulderje/intel-mac-rpms
-dnf install facetimehd-kmod -y
-
+#dnf copr enable mulderje/intel-mac-rpms
+#dnf install facetimehd-kmod -y
+curl -L -o /etc/yum.repos.d/_copr_mulderje-intel-mac-rpms.repo \
+    "https://copr.fedorainfracloud.org/coprs/mulderje/facetimehd-kmod/repo/fedora-$(rpm -E %fedora)/mulderje-intel-mac-rpms-fedora-$(rpm -E %fedora).repo"
+    rpm-ostree install facetimehd-kmod
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
